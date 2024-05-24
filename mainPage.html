@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style2.css">
+    <link rel="shortcut icon" type="image/png" href="imgs/server-icon.png">
+    <title>MOPA SERVERS</title>
+    <style>
+        .center-block {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .content-block {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 50%;
+            background-color: #f9f9f9;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .content-block img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .content-block a {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .content-block a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        var token = localStorage.getItem('token');
+        if (!token) {
+            window.location.href = 'loginPage.html';
+        }
+    </script>
+    <div class="background-image"></div>
+    <div class="center-block">
+        <div class="content-block">
+            <img src="imgs/zip-icon.png" alt="Arquivo ZIP">
+            <a href="https://github.com/Phillipe-Santiago/HISTORIA-DE-DIEGGIN/archive/refs/heads/main.zip" download>Baixar Repositório</a>
+        </div>
+    </div>
+</body>
+
+</html>
