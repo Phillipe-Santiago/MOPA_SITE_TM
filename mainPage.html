@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,41 +7,6 @@
     <link rel="stylesheet" href="CSS/style2.css">
     <link rel="shortcut icon" type="image/png" href="imgs/server-icon.png">
     <title>MOPA SERVERS</title>
-    <style>
-        .center-block {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-
-        .content-block {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 50%;
-            background-color: #f9f9f9;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-
-        .content-block img {
-            width: 100px;
-            height: 100px;
-        }
-
-        .content-block a {
-            text-decoration: none;
-            color: #007BFF;
-            font-weight: bold;
-            font-size: 1.2em;
-        }
-
-        .content-block a:hover {
-            text-decoration: underline;
-        }
-    </style>
 </head>
 
 <body>
@@ -55,10 +19,20 @@
     <div class="background-image"></div>
     <div class="center-block">
         <div class="content-block">
-            <img src="imgs/zip-icon.png" alt="Arquivo ZIP">
-            <a href="https://github.com/Phillipe-Santiago/HISTORIA-DE-DIEGGIN/archive/refs/heads/main.zip" download>Baixar Repositório</a>
+            <div class="content-item">
+                <img src="imgs/server-icon.png">
+                <a href="#" download>Config Server Minecraft</a>
+            </div>
+            <div class="content-item">
+                <img src="imgs/v-rising_7h5n.png">
+                <a href="#" download>Config Server V Rising</a>
+            </div>
         </div>
     </div>
+    <script>
+        var downloadLinks = document.querySelectorAll('.content-block a');
+        downloadLinks[0].href = 'https://drive.google.com/uc?export=download&id=1ASob6Rr4bhS1H-csabR_SHiVDJ-rxZi3';
+        downloadLinks[1].href = 'https://drive.google.com/uc?export=download&id=1HPWd0DEZJ4sPDIs5VYi3gyM7CHli6E9X';
+    </script>
 </body>
-
 </html>
